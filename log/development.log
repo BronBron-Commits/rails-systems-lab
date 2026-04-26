@@ -722,3 +722,533 @@ Processing by Api::NotesController#index as HTML
 Completed 200 OK in 251ms (Views: 0.2ms | ActiveRecord: 13.3ms (3 queries, 0 cached) | GC: 27.5ms)
 
 
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:17:40 +0000
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:17:40 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/notes"):
+  
+Processing by Api::NotesController#index as */*
+  Rendering public/406-unsupported-browser.html
+  Rendered public/406-unsupported-browser.html (Duration: 0.8ms | GC: 0.0ms)
+Filter chain halted as #<Proc:0x00000077efda2e58 /var/lib/gems/3.3.0/gems/actionpack-8.1.3/lib/action_controller/metal/allow_browser.rb:58 (lambda)> rendered or redirected
+Completed 406 Not Acceptable in 132ms (Views: 20.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 26.1ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:17:40 +0000
+Processing by Api::NotesController#index as */*
+  Rendering public/406-unsupported-browser.html
+  Rendered public/406-unsupported-browser.html (Duration: 1.0ms | GC: 0.0ms)
+Filter chain halted as #<Proc:0x00000077efda2e58 /var/lib/gems/3.3.0/gems/actionpack-8.1.3/lib/action_controller/metal/allow_browser.rb:58 (lambda)> rendered or redirected
+Completed 406 Not Acceptable in 23ms (Views: 5.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 8.7ms)
+
+
+Started POST "/api/notes" for 127.0.0.1 at 2026-04-26 23:17:52 +0000
+Processing by Api::NotesController#create as */*
+  Parameters: {"note"=>{"title"=>"Hey", "body"=>"Buddy"}}
+  Rendering public/406-unsupported-browser.html
+  Rendered public/406-unsupported-browser.html (Duration: 0.3ms | GC: 0.0ms)
+Filter chain halted as #<Proc:0x00000077efda2e58 /var/lib/gems/3.3.0/gems/actionpack-8.1.3/lib/action_controller/metal/allow_browser.rb:58 (lambda)> rendered or redirected
+Completed 406 Not Acceptable in 3ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:17:52 +0000
+Processing by Api::NotesController#index as */*
+  Rendering public/406-unsupported-browser.html
+  Rendered public/406-unsupported-browser.html (Duration: 0.3ms | GC: 0.0ms)
+Filter chain halted as #<Proc:0x00000077efda2e58 /var/lib/gems/3.3.0/gems/actionpack-8.1.3/lib/action_controller/metal/allow_browser.rb:58 (lambda)> rendered or redirected
+Completed 406 Not Acceptable in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/notes" for 127.0.0.1 at 2026-04-26 23:18:21 +0000
+Processing by NotesController#index as HTML
+  Rendering public/406-unsupported-browser.html
+  Rendered public/406-unsupported-browser.html (Duration: 1.0ms | GC: 0.0ms)
+Filter chain halted as #<Proc:0x00000077efda2e58 /var/lib/gems/3.3.0/gems/actionpack-8.1.3/lib/action_controller/metal/allow_browser.rb:58 (lambda)> rendered or redirected
+Completed 406 Not Acceptable in 4ms (Views: 1.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/notes" for 127.0.0.1 at 2026-04-26 23:18:27 +0000
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (5.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/views/notes/index.html.erb:11
+  Rendered notes/_note.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered notes/_note.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered notes/_note.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered notes/index.html.erb within layouts/application (Duration: 21.1ms | GC: 0.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 36.0ms | GC: 0.5ms)
+Completed 200 OK in 71ms (Views: 30.6ms | ActiveRecord: 9.5ms (1 query, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/notes" for 127.0.0.1 at 2026-04-26 23:26:01 +0000
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/views/notes/index.html.erb:11
+  Rendered notes/_note.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered notes/_note.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered notes/_note.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered notes/index.html.erb within layouts/application (Duration: 226.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 227.5ms | GC: 0.0ms)
+Completed 200 OK in 230ms (Views: 227.5ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/notes" for 127.0.0.1 at 2026-04-26 23:30:13 +0000
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/views/notes/index.html.erb:11
+  Rendered notes/_note.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered notes/_note.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered notes/_note.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered notes/index.html.erb within layouts/application (Duration: 2.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2026-04-26 23:30:18 +0000
+Processing by NotesController#completed as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/completed.html.erb within layouts/application
+  [1m[36mNote Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "notes" WHERE "notes"."status" = 'Done' LIMIT 1 /*action='completed',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/views/notes/completed.html.erb:4
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."status" = 'Done' /*action='completed',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/views/notes/completed.html.erb:5
+  Rendered notes/completed.html.erb within layouts/application (Duration: 10.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | GC: 0.0ms)
+Completed 200 OK in 213ms (Views: 11.6ms | ActiveRecord: 0.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:31:26 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (1.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 213ms (Views: 0.2ms | ActiveRecord: 4.8ms (3 queries, 0 cached) | GC: 25.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:31:26 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.0ms (3 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:31:28 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.4ms (3 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:31:28 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.1ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:34:15 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+Processing by Api::NotesController#index as */*
+  Rendering public/406-unsupported-browser.html
+  Rendered public/406-unsupported-browser.html (Duration: 0.4ms | GC: 0.0ms)
+Filter chain halted as #<Proc:0x000000771a688260 /var/lib/gems/3.3.0/gems/actionpack-8.1.3/lib/action_controller/metal/allow_browser.rb:58 (lambda)> rendered or redirected
+Completed 406 Not Acceptable in 91ms (Views: 17.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:34:15 +0000
+Processing by Api::NotesController#index as */*
+  Rendering public/406-unsupported-browser.html
+  Rendered public/406-unsupported-browser.html (Duration: 0.3ms | GC: 0.0ms)
+Filter chain halted as #<Proc:0x000000771a688260 /var/lib/gems/3.3.0/gems/actionpack-8.1.3/lib/action_controller/metal/allow_browser.rb:58 (lambda)> rendered or redirected
+Completed 406 Not Acceptable in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/notes" for 127.0.0.1 at 2026-04-26 23:34:26 +0000
+Processing by Api::NotesController#create as */*
+  Parameters: {"note"=>{"title"=>"Greetings", "body"=>"Hi there buddy"}}
+  Rendering public/406-unsupported-browser.html
+  Rendered public/406-unsupported-browser.html (Duration: 0.4ms | GC: 0.0ms)
+Filter chain halted as #<Proc:0x000000771a688260 /var/lib/gems/3.3.0/gems/actionpack-8.1.3/lib/action_controller/metal/allow_browser.rb:58 (lambda)> rendered or redirected
+Completed 406 Not Acceptable in 4ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:34:26 +0000
+Processing by Api::NotesController#index as */*
+  Rendering public/406-unsupported-browser.html
+  Rendered public/406-unsupported-browser.html (Duration: 0.3ms | GC: 0.0ms)
+Filter chain halted as #<Proc:0x000000771a688260 /var/lib/gems/3.3.0/gems/actionpack-8.1.3/lib/action_controller/metal/allow_browser.rb:58 (lambda)> rendered or redirected
+Completed 406 Not Acceptable in 4ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/notes" for 127.0.0.1 at 2026-04-26 23:34:40 +0000
+Processing by NotesController#index as HTML
+  Rendering public/406-unsupported-browser.html
+  Rendered public/406-unsupported-browser.html (Duration: 0.2ms | GC: 0.0ms)
+Filter chain halted as #<Proc:0x000000771a688260 /var/lib/gems/3.3.0/gems/actionpack-8.1.3/lib/action_controller/metal/allow_browser.rb:58 (lambda)> rendered or redirected
+Completed 406 Not Acceptable in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:34:43 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (3.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 82ms (Views: 0.1ms | ActiveRecord: 10.6ms (3 queries, 0 cached) | GC: 5.7ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:34:43 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 2.7ms (3 queries, 0 cached) | GC: 6.3ms)
+
+
+Started GET "/notes" for 127.0.0.1 at 2026-04-26 23:34:52 +0000
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/views/notes/index.html.erb:11
+  Rendered notes/_note.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered notes/_note.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered notes/_note.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered notes/index.html.erb within layouts/application (Duration: 34.4ms | GC: 12.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 58.7ms | GC: 21.7ms)
+Completed 200 OK in 98ms (Views: 62.7ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 27.0ms)
+
+
+Started GET "/notes/1" for 127.0.0.1 at 2026-04-26 23:34:54 +0000
+Processing by NotesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 1 LIMIT 1 /*action='show',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/notes_controller.rb:41:in `set_note'
+  Rendering layout layouts/application.html.erb
+  Rendering notes/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 1 /*action='show',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/views/notes/show.html.erb:14
+  Rendered notes/show.html.erb within layouts/application (Duration: 15.7ms | GC: 0.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | GC: 0.6ms)
+Completed 200 OK in 22ms (Views: 16.4ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:34:58 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.0ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:34:58 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.1ms (3 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:35:05 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.0ms (3 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:35:05 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.1ms (3 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:35:11 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 1.2ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:35:11 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.8ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:35:14 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 28ms (Views: 0.1ms | ActiveRecord: 1.2ms (3 queries, 0 cached) | GC: 19.6ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:35:14 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.2ms (3 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:35:16 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.9ms (3 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:35:16 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.0ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:35:17 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 1.1ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:35:17 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.0ms (3 queries, 0 cached) | GC: 0.8ms)
+
+
+Started POST "/api/notes" for 127.0.0.1 at 2026-04-26 23:35:29 +0000
+Processing by Api::NotesController#create as */*
+  Parameters: {"note"=>{"title"=>"Test agajn", "body"=>"Still trying to delete this message "}}
+HTTP Origin header (http://127.0.0.1:5173) didn't match request.base_url (http://127.0.0.1:3000)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:19:in `create'
+  [1m[36mNote Create (2.7ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score") VALUES ('Test agajn', 'Still trying to delete this message ', 'Pending', '2026-04-26 23:35:29.930248', '2026-04-26 23:35:29.930248', NULL, 0) RETURNING "id" /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (9.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:19:in `create'
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 4 /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:49:in `map'
+Completed 201 Created in 23ms (Views: 0.1ms | ActiveRecord: 14.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:35:29 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.7ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:35:33 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 21ms (Views: 0.1ms | ActiveRecord: 1.1ms (3 queries, 0 cached) | GC: 13.9ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:35:33 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.7ms (3 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:35:47 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.7ms (3 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:35:47 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.7ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/notes" for 127.0.0.1 at 2026-04-26 23:36:43 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+Processing by Api::NotesController#create as */*
+  Parameters: {"note"=>{"title"=>"Hey there", "body"=>"Testing"}}
+HTTP Origin header (http://127.0.0.1:5173) didn't match request.base_url (http://127.0.0.1:3000)
+Completed 422 Unprocessable Content in 128ms (Views: 0.2ms | ActiveRecord: 9.9ms (0 queries, 0 cached) | GC: 24.5ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:36:43 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.7ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 99ms (Views: 0.2ms | ActiveRecord: 4.4ms (3 queries, 0 cached) | GC: 2.1ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:36:46 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 1.2ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:36:46 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (1, 2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.1ms (3 queries, 0 cached) | GC: 0.1ms)
+
+
+Started DELETE "/api/notes/1" for 127.0.0.1 at 2026-04-26 23:36:48 +0000
+Processing by Api::NotesController#destroy as */*
+  Parameters: {"id"=>"1"}
+HTTP Origin header (http://127.0.0.1:5173) didn't match request.base_url (http://127.0.0.1:3000)
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 1 LIMIT 1 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `destroy'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `destroy'
+  [1m[36mComment Load (2.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 1 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `destroy'
+  [1m[36mNote Destroy (2.3ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = 1 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `destroy'
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `destroy'
+Completed 204 No Content in 29ms (ActiveRecord: 12.4ms (3 queries, 0 cached) | GC: 1.8ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:36:48 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 1.1ms (3 queries, 0 cached) | GC: 7.1ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:36:49 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (1.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 2.1ms (3 queries, 0 cached) | GC: 10.6ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 23:36:49 +0000
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (1.7ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 33ms (Views: 0.1ms | ActiveRecord: 3.0ms (3 queries, 0 cached) | GC: 24.4ms)
+
+
