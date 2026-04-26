@@ -1,0 +1,38 @@
+<p style="color: green"><%= notice %></p>
+
+<h2><%= @note.title %></h2>
+
+<p><strong>Body:</strong> <%= @note.body %></p>
+<p><strong>Status:</strong> <%= @note.status %></p>
+<p><strong>User:</strong> <%= @note.user ? @note.user.name : "None" %></p>
+
+<hr>
+
+<h3>Comments</h3>
+
+<% @note.comments.each do |comment| %>
+  <p>
+    <%= comment.body %>
+    <%= button_to "Delete",
+        note_comment_path(@note, comment),
+        method: :delete %>
+  </p>
+<% end %>
+
+<h4>Add Comment</h4>
+
+<%= form_with(model: [@note, Comment.new]) do |form| %>
+  <div>
+    <%= form.text_area :body %>
+  </div>
+  <%= form.submit "Add Comment" %>
+<% end %>
+
+<hr>
+
+<p>
+  <%= link_to "Edit this note", edit_note_path(@note) %> |
+  <%= link_to "Back to notes", notes_path %>
+</p>
+
+<%= button_to "Destroy this note", @note, method: :delete %>

@@ -1,0 +1,15 @@
+<h1>Completed Notes</h1>
+
+<% if @notes.any? %>
+  <% @notes.each do |note| %>
+    <p>
+      <strong><%= note.title %></strong><br>
+      <%= note.body %><br>
+      <%= link_to "Show", note %>
+    </p>
+  <% end %>
+<% else %>
+  <p>No completed notes yet.</p>
+<% end %>
+
+<p><%= link_to "Back to notes", notes_path %></p>
