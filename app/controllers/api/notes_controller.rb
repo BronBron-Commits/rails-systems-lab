@@ -23,6 +23,15 @@ class Api::NotesController < ApplicationController
     end
   end
 
+  def update
+    note = Note.find(params[:id])
+    if note.update(note_params)
+      render json: serialize_note(note)
+    else
+      render json: { errors: note.errors.full_messages }, status: :unprocessable_entity
+    end
+  end
+
   def destroy
     note = Note.find(params.expect(:id))
     note.destroy

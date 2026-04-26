@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   get "/completed", to: "notes#completed"
 
   namespace :api do
-    resources :notes, only: [:index, :show, :create, :destroy]
+    resources :notes, only: [:index, :show, :create, :update, :destroy]
   end
 end
