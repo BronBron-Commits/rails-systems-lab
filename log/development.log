@@ -1341,3 +1341,1926 @@ Processing by Api::NotesController#index as */*
 Completed 200 OK in 27ms (Views: 1.6ms | ActiveRecord: 1.8ms (3 queries, 0 cached) | GC: 19.4ms)
 
 
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='RailsSystemsLab'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:21:42 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 90ms (Views: 0.2ms | ActiveRecord: 2.7ms (3 queries, 0 cached) | GC: 10.1ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:21:42 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:28:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (1.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 75ms (Views: 0.2ms | ActiveRecord: 3.6ms (3 queries, 0 cached) | GC: 14.2ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:28:47 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:29:43 -0400
+Processing by Api::NotesController#index as HTML
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2026-04-26 20:29:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:30:52 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+Processing by Api::NotesController#index as HTML
+  [1m[36mNote Load (1.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 90ms (Views: 0.2ms | ActiveRecord: 4.7ms (3 queries, 0 cached) | GC: 45.9ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:31:09 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:31:09 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.7ms (3 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:31:26 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:31:26 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:32:17 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:32:17 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:34:54 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:34:54 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:34:55 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.8ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:34:55 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:36:00 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"title"=>"Test", "body"=>"This is urgent fix immediatelyy"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:36:00 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:37:27 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:37:27 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:40:46 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.7ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:40:46 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:40:51 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:40:51 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:40:54 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:40:54 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 1.0ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:40:55 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:40:55 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:40:55 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 7.3ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:40:55 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.8ms)
+
+
+Started PATCH "/api/notes/3" for 127.0.0.1 at 2026-04-26 20:40:58 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Done"}, "id"=>"3"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 3 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mNote Update (2.2ms)[0m  [1m[33mUPDATE "notes" SET "status" = 'Done', "updated_at" = '2026-04-27 00:40:58.032144' WHERE "notes"."id" = 3 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:54:in `serialize_note'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 3 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 8.1ms (4 queries, 0 cached) | GC: 1.6ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:40:58 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.2ms)
+
+
+Started PATCH "/api/notes/3" for 127.0.0.1 at 2026-04-26 20:40:58 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"3"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 3 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mNote Update (0.9ms)[0m  [1m[33mUPDATE "notes" SET "status" = 'Pending', "updated_at" = '2026-04-27 00:40:58.937664' WHERE "notes"."id" = 3 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:54:in `serialize_note'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 3 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.4ms (4 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:40:58 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.2ms)
+
+
+Started PATCH "/api/notes/3" for 127.0.0.1 at 2026-04-26 20:40:59 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Done"}, "id"=>"3"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 3 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mNote Update (0.9ms)[0m  [1m[33mUPDATE "notes" SET "status" = 'Done', "updated_at" = '2026-04-27 00:40:59.466121' WHERE "notes"."id" = 3 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:54:in `serialize_note'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 3 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.3ms (4 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:40:59 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/3" for 127.0.0.1 at 2026-04-26 20:40:59 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"3"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 3 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mNote Update (0.9ms)[0m  [1m[33mUPDATE "notes" SET "status" = 'Pending', "updated_at" = '2026-04-27 00:40:59.735701' WHERE "notes"."id" = 3 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:54:in `serialize_note'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 3 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.3ms (4 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:40:59 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.3ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:00 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:00 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms (3 queries, 0 cached) | GC: 0.2ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:01 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:01 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:01 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:01 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.2ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:02 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:02 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:02 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:02 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms (3 queries, 0 cached) | GC: 0.3ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:02 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:02 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:03 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:03 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:04 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:04 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.6ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:05 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:05 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms (3 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:05 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.1ms (3 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:05 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms (3 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:06 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:06 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:06 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:06 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.4ms)
+
+
+Started PATCH "/api/notes/4" for 127.0.0.1 at 2026-04-26 20:41:07 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Done"}, "id"=>"4"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 4 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mNote Update (0.9ms)[0m  [1m[33mUPDATE "notes" SET "status" = 'Done', "updated_at" = '2026-04-27 00:41:07.304630' WHERE "notes"."id" = 4 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 4 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.3ms (3 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:07 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms (3 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:07 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:07 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.2ms)
+
+
+Started PATCH "/api/notes/3" for 127.0.0.1 at 2026-04-26 20:41:08 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Done"}, "id"=>"3"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 3 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mNote Update (1.0ms)[0m  [1m[33mUPDATE "notes" SET "status" = 'Done', "updated_at" = '2026-04-27 00:41:08.708844' WHERE "notes"."id" = 3 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:54:in `serialize_note'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 3 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.4ms (4 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:08 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms (3 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:09 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.9ms (3 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:09 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.3ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:09 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:09 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:10 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:10 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.3ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:10 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:10 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:11 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:11 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms (3 queries, 0 cached) | GC: 1.4ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:12 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:12 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms (3 queries, 0 cached) | GC: 0.7ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:12 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:12 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:12 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:12 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:12 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:12 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:12 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:12 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:18 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:18 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.3ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:18 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:18 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:18 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:18 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.4ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:41:55 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:41:55 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.4ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:42:22 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:42:22 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:42:22 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:42:22 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.4ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:42:22 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:42:22 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:42:23 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:42:23 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:42:24 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:42:24 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:42:24 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:42:24 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.6ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:42:25 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:42:25 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.8ms (3 queries, 0 cached) | GC: 0.2ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:42:27 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:42:27 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.3ms)
+
+
+Started PATCH "/api/notes/3" for 127.0.0.1 at 2026-04-26 20:42:29 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"3"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 3 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mNote Update (0.9ms)[0m  [1m[33mUPDATE "notes" SET "status" = 'Pending', "updated_at" = '2026-04-27 00:42:29.557359' WHERE "notes"."id" = 3 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:54:in `serialize_note'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 3 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 1.6ms (4 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:42:29 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/4" for 127.0.0.1 at 2026-04-26 20:42:31 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"4"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 4 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mNote Update (1.2ms)[0m  [1m[33mUPDATE "notes" SET "status" = 'Pending', "updated_at" = '2026-04-27 00:42:31.094384' WHERE "notes"."id" = 4 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 4 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.6ms (3 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:42:31 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:44:25 -0400
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:44:25 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/notes"):
+  
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (1.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 103ms (Views: 0.4ms | ActiveRecord: 4.2ms (3 queries, 0 cached) | GC: 5.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:44:26 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Pending"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mNote Update (1.3ms)[0m  [1m[33mUPDATE "notes" SET "status" = 'Pending', "updated_at" = '2026-04-27 00:44:26.989461' WHERE "notes"."id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 7.5ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:44:27 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.7ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:44:28 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"status"=>"Done"}, "id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mNote Update (1.0ms)[0m  [1m[33mUPDATE "notes" SET "status" = 'Done', "updated_at" = '2026-04-27 00:44:28.854853' WHERE "notes"."id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:28:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.4ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:44:28 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:50:05 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (1.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 2.0ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:50:05 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3, 4) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.9ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/api/notes/4" for 127.0.0.1 at 2026-04-26 20:50:21 -0400
+Processing by Api::NotesController#destroy as */*
+  Parameters: {"id"=>"4"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 4 LIMIT 1 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:36:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:37:in `destroy'
+  [1m[36mComment Load (1.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 4 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:37:in `destroy'
+  [1m[36mNote Destroy (0.1ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = 4 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:37:in `destroy'
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:37:in `destroy'
+Completed 204 No Content in 14ms (ActiveRecord: 7.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:50:21 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (2, 3) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/api/notes/3" for 127.0.0.1 at 2026-04-26 20:50:27 -0400
+Processing by Api::NotesController#destroy as */*
+  Parameters: {"id"=>"3"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 3 LIMIT 1 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:36:in `destroy'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:37:in `destroy'
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 3 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:37:in `destroy'
+  [1m[36mNote Destroy (0.1ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = 3 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:37:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:37:in `destroy'
+Completed 204 No Content in 5ms (ActiveRecord: 1.2ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:50:27 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/api/notes/2" for 127.0.0.1 at 2026-04-26 20:50:28 -0400
+Processing by Api::NotesController#destroy as */*
+  Parameters: {"id"=>"2"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 2 LIMIT 1 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:36:in `destroy'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:37:in `destroy'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 2 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:37:in `destroy'
+  [1m[36mNote Destroy (0.1ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = 2 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:37:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:37:in `destroy'
+Completed 204 No Content in 5ms (ActiveRecord: 1.1ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:50:28 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:56:25 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (1.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.0ms (1 query, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:56:26 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:56:26 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:56:27 -0400
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:56:27 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started POST "/api/notes" for 127.0.0.1 at 2026-04-26 20:57:58 -0400
+Processing by Api::NotesController#create as */*
+  Parameters: {"note"=>{"title"=>"Hydraulic leak", "body"=>"Description: urgent inspection required, fluid visible near lift cylinder", "machine_name"=>"Loader 12", "machine_model"=>"Cat 966M", "machine_location"=>"Site A", "operating_hours"=>4231}}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:19:in `create'
+  [1m[36mNote Create (1.2ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score") VALUES ('Hydraulic leak', 'Description: urgent inspection required, fluid visible near lift cylinder', 'Pending', '2026-04-27 00:57:58.465914', '2026-04-27 00:57:58.465914', NULL, 50) RETURNING "id" /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:19:in `create'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 5 /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 201 Created in 13ms (Views: 0.1ms | ActiveRecord: 6.9ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 20:57:58 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 5 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.3ms)
+
+
+Started PATCH "/api/notes/5" for 127.0.0.1 at 2026-04-26 21:07:55 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"title"=>"Hydraulic leak", "body"=>"Description: urgent inspection required, fluid visible near lift cylinder", "machine_name"=>"", "machine_model"=>"", "machine_location"=>"site a", "operating_hours"=>nil}, "id"=>"5"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (1.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 5 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 5 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:07:55 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 5 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:09:08 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (1.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 5 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 55ms (Views: 0.8ms | ActiveRecord: 3.3ms (2 queries, 0 cached) | GC: 15.2ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:09:08 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 5 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:09:09 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 5 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:09:09 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 5 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.4ms)
+
+
+Started PATCH "/api/notes/5" for 127.0.0.1 at 2026-04-26 21:09:32 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"title"=>"Hydraulic leak", "body"=>"Description: urgent inspection required, fluid visible near lift cylinder", "machine_name"=>"cat1", "machine_model"=>"", "machine_location"=>"", "operating_hours"=>nil}, "id"=>"5"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 5 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 5 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:09:32 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 5 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" ORDER BY "notes"."id" DESC LIMIT 1 /*application='RailsSystemsLab'*/[0m
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:11:17 -0400
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:11:17 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/notes"):
+  
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 5 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 63ms (Views: 0.2ms | ActiveRecord: 2.4ms (2 queries, 0 cached) | GC: 3.9ms)
+
+
+Started DELETE "/api/notes/5" for 127.0.0.1 at 2026-04-26 21:11:23 -0400
+Processing by Api::NotesController#destroy as */*
+  Parameters: {"id"=>"5"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 5 LIMIT 1 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:36:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:37:in `destroy'
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 5 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:37:in `destroy'
+  [1m[36mNote Destroy (0.1ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = 5 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:37:in `destroy'
+  [1m[36mTRANSACTION (14.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:37:in `destroy'
+Completed 204 No Content in 21ms (ActiveRecord: 15.3ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:11:23 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/notes" for 127.0.0.1 at 2026-04-26 21:11:36 -0400
+Processing by Api::NotesController#create as */*
+  Parameters: {"note"=>{"title"=>"issue", "body"=>"description theres a serious pron;e,m", "machine_name"=>"leak", "machine_model"=>"cat ", "machine_location"=>"somewhere", "operating_hours"=>nil}}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:19:in `create'
+  [1m[36mNote Create (1.4ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score") VALUES ('issue', 'description theres a serious pron;e,m', 'Open', '2026-04-27 01:11:36.512239', '2026-04-27 01:11:36.512239', NULL, 0) RETURNING "id" /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:19:in `create'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 6 /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:58:in `map'
+Completed 201 Created in 6ms (Views: 0.1ms | ActiveRecord: 1.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:11:36 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 6 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:12:33 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 6 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:12:33 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 6 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:7:in `map'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='RailsSystemsLab'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:13:38 -0400
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:13:38 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/notes"):
+  
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (1.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 6 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 5.3ms (2 queries, 0 cached) | GC: 19.5ms)
+
+
+  
+NoMethodError (undefined method `machine_name' for #<Note id: 6, title: "issue", body: "description theres a serious pron;e,m", status: "Open", created_at: "2026-04-27 01:11:36.512239000 +0000", updated_at: "2026-04-27 01:11:36.512239000 +0000", user_id: nil, score: 0>):
+  
+app/controllers/api/notes_controller.rb:62:in `serialize_note'
+app/controllers/api/notes_controller.rb:6:in `block in index'
+app/controllers/api/notes_controller.rb:6:in `map'
+app/controllers/api/notes_controller.rb:6:in `index'
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='RailsSystemsLab'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+Migrating to AddMachineFieldsToNotes (20260427011658)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  [1m[35m (1.6ms)[0m  [1m[35mALTER TABLE "notes" ADD "machine_name" varchar /*application='RailsSystemsLab'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "notes" ADD "machine_location" varchar /*application='RailsSystemsLab'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "notes" ADD "machine_model" varchar /*application='RailsSystemsLab'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "notes" ADD "operating_hours" integer /*application='RailsSystemsLab'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260427011658') RETURNING "version" /*application='RailsSystemsLab'*/[0m
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:17:13 -0400
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:17:13 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/notes"):
+  
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (1.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 6 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 101ms (Views: 0.3ms | ActiveRecord: 3.2ms (2 queries, 0 cached) | GC: 11.7ms)
+
+
+Started DELETE "/api/notes/6" for 127.0.0.1 at 2026-04-26 21:17:15 -0400
+Processing by Api::NotesController#destroy as */*
+  Parameters: {"id"=>"6"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 6 LIMIT 1 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:36:in `destroy'
+  [1m[36mComment Load (1.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 6 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:36:in `destroy'
+  [1m[36mNote Destroy (0.1ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = 6 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:36:in `destroy'
+  [1m[36mTRANSACTION (12.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:36:in `destroy'
+Completed 204 No Content in 23ms (ActiveRecord: 14.1ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:17:15 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/notes" for 127.0.0.1 at 2026-04-26 21:17:37 -0400
+Processing by Api::NotesController#create as */*
+  Parameters: {"note"=>{"title"=>"issue", "body"=>"dewcriptoin ", "machine_name"=>"machine", "machine_model"=>"mode", "machine_location"=>"locartion", "operating_hours"=>nil}}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:17:in `create'
+  [1m[36mNote Create (2.4ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('issue', 'dewcriptoin ', 'Open', '2026-04-27 01:17:37.905756', '2026-04-27 01:17:37.905756', NULL, 0, 'machine', 'locartion', 'mode', NULL) RETURNING "id" /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:17:in `create'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 7 /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:70:in `map'
+Completed 201 Created in 13ms (Views: 0.4ms | ActiveRecord: 3.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:17:37 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 7 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:18:36 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (1.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 7 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 63ms (Views: 0.2ms | ActiveRecord: 3.0ms (2 queries, 0 cached) | GC: 12.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:18:36 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 7 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.3ms)
+
+
+Started DELETE "/api/notes/7" for 127.0.0.1 at 2026-04-26 21:18:39 -0400
+Processing by Api::NotesController#destroy as */*
+  Parameters: {"id"=>"7"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 7 LIMIT 1 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:36:in `destroy'
+  [1m[36mComment Load (1.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 7 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:36:in `destroy'
+  [1m[36mNote Destroy (0.1ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = 7 /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:36:in `destroy'
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='destroy',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:36:in `destroy'
+Completed 204 No Content in 13ms (ActiveRecord: 6.4ms (3 queries, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:18:39 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started POST "/api/notes" for 127.0.0.1 at 2026-04-26 21:19:03 -0400
+Processing by Api::NotesController#create as */*
+  Parameters: {"note"=>{"title"=>"Issue", "body"=>"Description", "machine_name"=>"Machine name", "machine_model"=>"Model type", "machine_location"=>"Location in the town", "operating_hours"=>nil}}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:17:in `create'
+  [1m[36mNote Create (1.1ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Issue', 'Description', 'Open', '2026-04-27 01:19:03.882444', '2026-04-27 01:19:03.882444', NULL, 0, 'Machine name', 'Location in the town', 'Model type', NULL) RETURNING "id" /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:17:in `create'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 8 /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:70:in `map'
+Completed 201 Created in 6ms (Views: 0.1ms | ActiveRecord: 1.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:19:03 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 8 /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/notes" for 127.0.0.1 at 2026-04-26 21:19:54 -0400
+Processing by Api::NotesController#create as */*
+  Parameters: {"note"=>{"title"=>"Issue thats not the same", "body"=>"description thats totally different", "machine_name"=>"Different Machine", "machine_model"=>"Different Model", "machine_location"=>"Different Location", "operating_hours"=>55}}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:17:in `create'
+  [1m[36mNote Create (1.6ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Issue thats not the same', 'description thats totally different', 'Open', '2026-04-27 01:19:54.604171', '2026-04-27 01:19:54.604171', NULL, 0, 'Different Machine', 'Different Location', 'Different Model', 55) RETURNING "id" /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:17:in `create'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 9 /*action='create',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:70:in `map'
+Completed 201 Created in 7ms (Views: 0.1ms | ActiveRecord: 2.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:19:54 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+

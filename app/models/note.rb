@@ -2,24 +2,13 @@ class Note < ApplicationRecord
   belongs_to :user, optional: true
   has_many :comments, dependent: :destroy
 
-  validates :title, presence: true
-  validates :body, length: { minimum: 10 }
-
-  before_save :auto_set_status
+  before_save :default_status
   before_save :calculate_score
-
-  def completed?
-    status == "Done"
-  end
 
   private
 
-  def auto_set_status
-    if body&.downcase&.include?("urgent")
-      self.status = "Done"
-    else
-      self.status = "Pending" if status.blank?
-    end
+  def default_status
+    self.status = "Open" if status.blank?
   end
 
   def calculate_score

@@ -3,13 +3,11 @@ class Api::NotesController < ApplicationController
 
   def index
     notes = Note.includes(:user, :comments).all
-
     render json: notes.map { |note| serialize_note(note) }
   end
 
   def show
-    note = Note.includes(:user, :comments).find(params.expect(:id))
-
+    note = Note.includes(:user, :comments).find(params[:id])
     render json: serialize_note(note)
   end
 
@@ -25,6 +23,7 @@ class Api::NotesController < ApplicationController
 
   def update
     note = Note.find(params[:id])
+
     if note.update(note_params)
       render json: serialize_note(note)
     else
@@ -33,7 +32,7 @@ class Api::NotesController < ApplicationController
   end
 
   def destroy
-    note = Note.find(params.expect(:id))
+    note = Note.find(params[:id])
     note.destroy
     head :no_content
   end
@@ -41,7 +40,16 @@ class Api::NotesController < ApplicationController
   private
 
   def note_params
-    params.expect(note: [:title, :body, :status, :user_id])
+    params.require(:note).permit(
+      :title,
+      :body,
+      :status,
+      :user_id,
+      :machine_name,
+      :machine_location,
+      :machine_model,
+      :operating_hours
+    )
   end
 
   def serialize_note(note)
@@ -51,6 +59,10 @@ class Api::NotesController < ApplicationController
       body: note.body,
       status: note.status,
       score: note.score,
+      machine_name: note.machine_name,
+      machine_location: note.machine_location,
+      machine_model: note.machine_model,
+      operating_hours: note.operating_hours,
       user: note.user ? {
         id: note.user.id,
         name: note.user.name
