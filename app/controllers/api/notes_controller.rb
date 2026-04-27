@@ -23,6 +23,16 @@ class Api::NotesController < ApplicationController
 
   def update
     note = Note.find(params[:id])
+    new_status = params.dig(:note, :status)
+
+    if new_status && note.status != new_status
+      case new_status
+      when "In Progress"
+        note.started_at ||= Time.current if note.respond_to?(:started_at)
+      when "Completed"
+        note.completed_at ||= Time.current if note.respond_to?(:completed_at)
+      end
+    end
 
     if note.update(note_params)
       render json: serialize_note(note)
@@ -63,6 +73,8 @@ class Api::NotesController < ApplicationController
       machine_location: note.machine_location,
       machine_model: note.machine_model,
       operating_hours: note.operating_hours,
+      started_at: note.respond_to?(:started_at) ? note.started_at : nil,
+      completed_at: note.respond_to?(:completed_at) ? note.completed_at : nil,
       user: note.user ? {
         id: note.user.id,
         name: note.user.name

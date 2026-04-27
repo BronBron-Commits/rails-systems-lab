@@ -3675,3 +3675,332 @@ Processing by Api::NotesController#index as */*
 Completed 200 OK in 78ms (Views: 0.4ms | ActiveRecord: 3.5ms (2 queries, 0 cached) | GC: 4.5ms)
 
 
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='RailsSystemsLab'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+Migrating to AddLifecycleToNotes (20260427013516)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "notes" ADD "started_at" datetime(6) /*application='RailsSystemsLab'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "notes" ADD "completed_at" datetime(6) /*application='RailsSystemsLab'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260427013516') RETURNING "version" /*application='RailsSystemsLab'*/[0m
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:35:41 -0400
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:35:41 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/notes"):
+  
+  
+NoMethodError (undefined method `namespace' for main:Object):
+  
+config/routes.rb:15:in `<main>'
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='RailsSystemsLab'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:39:42 -0400
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:39:42 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/notes"):
+  
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (1.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 81ms (Views: 0.4ms | ActiveRecord: 3.4ms (2 queries, 0 cached) | GC: 4.3ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:42:23 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+Processing by Api::NotesController#index as HTML
+  [1m[36mNote Load (5.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 117ms (Views: 0.3ms | ActiveRecord: 8.6ms (2 queries, 0 cached) | GC: 51.6ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2026-04-26 21:42:23 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:42:29 -0400
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:42:29 -0400
+Processing by Api::NotesController#index as */*
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  [1m[36mNote Load (1.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 0.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 1.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:48:30 -0400
+Started GET "/api/insights" for 127.0.0.1 at 2026-04-26 21:48:30 -0400
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:48:30 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+Processing by Api::NotesController#index as */*
+Processing by Api::InsightsController#index as */*
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Count (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  [1m[36mNote Load (1.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:7:in `index'
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE "notes"."status" != 'Completed' /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:8:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE "notes"."status" = 'Completed' /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:9:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE (score >= 30) /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:10:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."machine_model" AS "notes_machine_model" FROM "notes" GROUP BY "notes"."machine_model" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:13:in `index'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."machine_location" AS "notes_machine_location" FROM "notes" GROUP BY "notes"."machine_location" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 131ms (Views: 0.3ms | ActiveRecord: 0.9ms (2 queries, 0 cached) | GC: 46.1ms)
+
+
+  ↳ app/controllers/api/insights_controller.rb:14:in `index'
+Completed 200 OK in 124ms (Views: 0.1ms | ActiveRecord: 2.8ms (2 queries, 0 cached) | GC: 41.8ms)
+
+
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."status" AS "notes_status" FROM "notes" GROUP BY "notes"."status" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:15:in `index'
+Completed 200 OK in 135ms (Views: 0.1ms | ActiveRecord: 2.8ms (7 queries, 0 cached) | GC: 43.7ms)
+
+
+Started GET "/api/insights" for 127.0.0.1 at 2026-04-26 21:48:30 -0400
+Processing by Api::InsightsController#index as */*
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:7:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE "notes"."status" != 'Completed' /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:8:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE "notes"."status" = 'Completed' /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:9:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE (score >= 30) /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:10:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."machine_model" AS "notes_machine_model" FROM "notes" GROUP BY "notes"."machine_model" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:13:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."machine_location" AS "notes_machine_location" FROM "notes" GROUP BY "notes"."machine_location" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:14:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."status" AS "notes_status" FROM "notes" GROUP BY "notes"."status" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:15:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.6ms (7 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/api/insights" for 127.0.0.1 at 2026-04-26 21:50:41 -0400
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:50:41 -0400
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:50:41 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/insights"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/api/notes"):
+  
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (1.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 87ms (Views: 0.8ms | ActiveRecord: 2.8ms (2 queries, 0 cached) | GC: 2.6ms)
+
+
+Started GET "/api/insights" for 127.0.0.1 at 2026-04-26 21:50:41 -0400
+Processing by Api::InsightsController#index as */*
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:7:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE "notes"."status" != 'Completed' /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:8:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE "notes"."status" = 'Completed' /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:9:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE (score >= 30) /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:10:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."machine_model" AS "notes_machine_model" FROM "notes" GROUP BY "notes"."machine_model" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:13:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."machine_location" AS "notes_machine_location" FROM "notes" GROUP BY "notes"."machine_location" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:14:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."status" AS "notes_status" FROM "notes" GROUP BY "notes"."status" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:15:in `index'
+Completed 200 OK in 44ms (Views: 0.2ms | ActiveRecord: 1.1ms (7 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/insights" for 127.0.0.1 at 2026-04-26 21:51:26 -0400
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:51:26 -0400
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:51:26 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/insights"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/api/notes"):
+  
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 53ms (Views: 0.3ms | ActiveRecord: 2.4ms (2 queries, 0 cached) | GC: 3.0ms)
+
+
+Started GET "/api/insights" for 127.0.0.1 at 2026-04-26 21:51:26 -0400
+Processing by Api::InsightsController#index as */*
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:7:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE "notes"."status" != 'Completed' /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:8:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE "notes"."status" = 'Completed' /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:9:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE (score >= 30) /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:10:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."machine_model" AS "notes_machine_model" FROM "notes" GROUP BY "notes"."machine_model" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:13:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."machine_location" AS "notes_machine_location" FROM "notes" GROUP BY "notes"."machine_location" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:14:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."status" AS "notes_status" FROM "notes" GROUP BY "notes"."status" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:15:in `index'
+Completed 200 OK in 35ms (Views: 0.2ms | ActiveRecord: 1.2ms (7 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:52:27 -0400
+Started GET "/api/insights" for 127.0.0.1 at 2026-04-26 21:52:27 -0400
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:52:27 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/insights"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/api/notes"):
+  
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (1.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 84ms (Views: 0.4ms | ActiveRecord: 4.0ms (2 queries, 0 cached) | GC: 16.7ms)
+
+
+Started GET "/api/insights" for 127.0.0.1 at 2026-04-26 21:52:27 -0400
+Processing by Api::InsightsController#index as */*
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:7:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE "notes"."status" != 'Completed' /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:8:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE "notes"."status" = 'Completed' /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:9:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE (score >= 30) /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:10:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."machine_model" AS "notes_machine_model" FROM "notes" GROUP BY "notes"."machine_model" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:13:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."machine_location" AS "notes_machine_location" FROM "notes" GROUP BY "notes"."machine_location" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:14:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."status" AS "notes_status" FROM "notes" GROUP BY "notes"."status" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:15:in `index'
+Completed 200 OK in 32ms (Views: 0.2ms | ActiveRecord: 1.1ms (7 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:52:53 -0400
+Started GET "/api/insights" for 127.0.0.1 at 2026-04-26 21:52:53 -0400
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:52:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/insights"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/api/notes"):
+  
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (1.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 93ms (Views: 0.3ms | ActiveRecord: 2.6ms (2 queries, 0 cached) | GC: 3.0ms)
+
+
+Started GET "/api/insights" for 127.0.0.1 at 2026-04-26 21:52:54 -0400
+Processing by Api::InsightsController#index as */*
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:7:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE "notes"."status" != 'Completed' /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:8:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE "notes"."status" = 'Completed' /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:9:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE (score >= 30) /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:10:in `index'
+  [1m[36mNote Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."machine_model" AS "notes_machine_model" FROM "notes" GROUP BY "notes"."machine_model" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:13:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."machine_location" AS "notes_machine_location" FROM "notes" GROUP BY "notes"."machine_location" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:14:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."status" AS "notes_status" FROM "notes" GROUP BY "notes"."status" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:15:in `index'
+Completed 200 OK in 22ms (Views: 0.1ms | ActiveRecord: 1.0ms (7 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:54:09 -0400
+Started GET "/api/insights" for 127.0.0.1 at 2026-04-26 21:54:09 -0400
+Started GET "/api/insights" for 127.0.0.1 at 2026-04-26 21:54:09 -0400
+Processing by Api::NotesController#index as */*
+Processing by Api::InsightsController#index as */*
+  [1m[36mNote Load (0.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+Processing by Api::InsightsController#index as */*
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  [1m[36mNote Count (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 0.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:7:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE "notes"."status" != 'Completed' /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:7:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE "notes"."status" != 'Completed' /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:8:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE "notes"."status" = 'Completed' /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:8:in `index'
+  ↳ app/controllers/api/insights_controller.rb:9:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE "notes"."status" = 'Completed' /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:54:09 -0400
+  ↳ app/controllers/api/insights_controller.rb:9:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE (score >= 30) /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes" WHERE (score >= 30) /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:10:in `index'
+  ↳ app/controllers/api/insights_controller.rb:10:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."machine_model" AS "notes_machine_model" FROM "notes" GROUP BY "notes"."machine_model" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:13:in `index'
+  [1m[36mNote Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."machine_model" AS "notes_machine_model" FROM "notes" GROUP BY "notes"."machine_model" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."machine_location" AS "notes_machine_location" FROM "notes" GROUP BY "notes"."machine_location" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:13:in `index'
+  [1m[36mNote Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."machine_location" AS "notes_machine_location" FROM "notes" GROUP BY "notes"."machine_location" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:14:in `index'
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."status" AS "notes_status" FROM "notes" GROUP BY "notes"."status" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:14:in `index'
+  ↳ app/controllers/api/insights_controller.rb:15:in `index'
+Completed 200 OK in 35ms (Views: 0.1ms | ActiveRecord: 1.2ms (7 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mNote Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "notes"."status" AS "notes_status" FROM "notes" GROUP BY "notes"."status" /*action='index',application='RailsSystemsLab',controller='insights'*/[0m
+  ↳ app/controllers/api/insights_controller.rb:15:in `index'
+Completed 200 OK in 44ms (Views: 0.2ms | ActiveRecord: 2.2ms (7 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 7.8ms)
+
+
