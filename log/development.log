@@ -3264,3 +3264,414 @@ Processing by Api::NotesController#index as */*
 Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:24:40 -0400
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:24:40 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/notes"):
+  
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (1.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 81ms (Views: 0.3ms | ActiveRecord: 3.0ms (2 queries, 0 cached) | GC: 19.8ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:26:10 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (2.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 75ms (Views: 0.2ms | ActiveRecord: 5.3ms (2 queries, 0 cached) | GC: 40.5ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:26:10 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started PATCH "/api/notes/8" for 127.0.0.1 at 2026-04-26 21:26:17 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"title"=>"Issue", "body"=>"Description", "machine_name"=>"Machine name", "machine_model"=>"Model type", "machine_location"=>"Location in the town", "operating_hours"=>6677}, "id"=>"8"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 8 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:25:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mNote Update (1.4ms)[0m  [1m[33mUPDATE "notes" SET "updated_at" = '2026-04-27 01:26:17.829246', "operating_hours" = 6677 WHERE "notes"."id" = 8 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:27:in `update'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 8 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:70:in `map'
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 7.2ms (3 queries, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:26:17 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started PATCH "/api/notes/8" for 127.0.0.1 at 2026-04-26 21:26:24 -0400
+Processing by Api::NotesController#update as */*
+  Parameters: {"note"=>{"title"=>"Issue", "body"=>"Description", "machine_name"=>"Machine name", "machine_model"=>"Model type", "machine_location"=>"Location in the town", "operating_hours"=>6677}, "id"=>"8"}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://localhost:3000)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = 8 LIMIT 1 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:25:in `update'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" = 8 /*action='update',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:70:in `map'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:26:24 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:26:25 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (2.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:26:25 -0400
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 1.6ms (2 queries, 0 cached) | GC: 0.4ms)
+
+
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.9ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Oil leak detected - Cat 336', 'fluid visible near lower engine compartment', 'In Progress', '2026-04-27 01:31:30.814399', '2026-04-27 01:31:30.814399', NULL, 0, 'Excavator 955', 'West Pit', 'Cat 336', 10230) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.2ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Transmission fault code - Cat 340', 'powertrain fault code logged during shift', 'In Progress', '2026-04-27 01:31:30.825446', '2026-04-27 01:31:30.825446', NULL, 0, 'Excavator 694', 'Depot Bay 3', 'Cat 340', 6333) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.3ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Engine temperature high - Cat D6', 'urgent fault detected, engine temperature exceeded normal operating band', 'Open', '2026-04-27 01:31:30.829060', '2026-04-27 01:31:30.829060', NULL, 50, 'Dozer 921', 'Aggregate Yard', 'Cat D6', 9342) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.0ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Engine temperature high - Cat 745', 'urgent fault detected, engine temperature exceeded normal operating band', 'Open', '2026-04-27 01:31:30.832223', '2026-04-27 01:31:30.832223', NULL, 50, 'Articulated Truck 203', 'West Pit', 'Cat 745', 1053) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.8ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Brake system warning - Cat 745', 'urgent brake warning reported during operation', 'In Progress', '2026-04-27 01:31:30.835002', '2026-04-27 01:31:30.835002', NULL, 30, 'Articulated Truck 377', 'Depot Bay 3', 'Cat 745', 9276) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.0ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Transmission fault code - Cat 980', 'powertrain fault code logged during shift', 'In Progress', '2026-04-27 01:31:30.837319', '2026-04-27 01:31:30.837319', NULL, 0, 'Wheel Loader 927', 'West Pit', 'Cat 980', 3208) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.9ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Bucket control delay - Cat 140', 'operator reported delayed hydraulic response at bucket controls', 'Completed', '2026-04-27 01:31:30.839657', '2026-04-27 01:31:30.839657', NULL, 20, 'Motor Grader 127', 'Site A', 'Cat 140', 8757) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.1ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Hydraulic pressure warning - Cat 340', 'urgent inspection required, hydraulic pressure dropped below expected range', 'Completed', '2026-04-27 01:31:30.842019', '2026-04-27 01:31:30.842019', NULL, 50, 'Excavator 834', 'Site A', 'Cat 340', 10118) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.9ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Bucket control delay - Cat D8', 'operator reported delayed hydraulic response at bucket controls', 'Open', '2026-04-27 01:31:30.844599', '2026-04-27 01:31:30.844599', NULL, 20, 'Dozer 334', 'Depot Bay 3', 'Cat D8', 1499) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.0ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Sensor communication loss - Cat 797F', 'machine telemetry reported intermittent sensor dropout', 'Completed', '2026-04-27 01:31:30.847107', '2026-04-27 01:31:30.847107', NULL, 20, 'Mining Truck 565', 'Highway Expansion Zone', 'Cat 797F', 7519) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.1ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Sensor communication loss - Cat D6', 'machine telemetry reported intermittent sensor dropout', 'In Progress', '2026-04-27 01:31:30.849632', '2026-04-27 01:31:30.849632', NULL, 20, 'Dozer 616', 'Depot Bay 3', 'Cat D6', 8332) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.2ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Engine temperature high - Cat 336', 'urgent fault detected, engine temperature exceeded normal operating band', 'Completed', '2026-04-27 01:31:30.852431', '2026-04-27 01:31:30.852431', NULL, 50, 'Excavator 957', 'Downtown Excavation', 'Cat 336', 7250) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.9ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Bucket control delay - Cat 797F', 'operator reported delayed hydraulic response at bucket controls', 'Completed', '2026-04-27 01:31:30.855286', '2026-04-27 01:31:30.855286', NULL, 20, 'Mining Truck 512', 'Downtown Excavation', 'Cat 797F', 7265) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.0ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Hydraulic pressure warning - Cat 349', 'urgent inspection required, hydraulic pressure dropped below expected range', 'In Progress', '2026-04-27 01:31:30.857834', '2026-04-27 01:31:30.857834', NULL, 50, 'Excavator 461', 'North Quarry', 'Cat 349', 3374) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.4ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Bucket control delay - Cat 797F', 'operator reported delayed hydraulic response at bucket controls', 'Open', '2026-04-27 01:31:30.860610', '2026-04-27 01:31:30.860610', NULL, 20, 'Mining Truck 429', 'Downtown Excavation', 'Cat 797F', 9382) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.2ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Low fuel pressure - Cat 797F', 'fuel delivery irregularity detected under load', 'Completed', '2026-04-27 01:31:30.864148', '2026-04-27 01:31:30.864148', NULL, 0, 'Mining Truck 393', 'Depot Bay 3', 'Cat 797F', 8828) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.9ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Track tension issue - Cat D8', 'track tension outside service range, inspect undercarriage', 'Open', '2026-04-27 01:31:30.867036', '2026-04-27 01:31:30.867036', NULL, 20, 'Dozer 211', 'Site A', 'Cat D8', 11916) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.0ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Track tension issue - Cat 336', 'track tension outside service range, inspect undercarriage', 'Completed', '2026-04-27 01:31:30.869585', '2026-04-27 01:31:30.869585', NULL, 20, 'Excavator 184', 'Aggregate Yard', 'Cat 336', 4755) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.9ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Scheduled service due - Cat 745', 'operating hours threshold reached for planned maintenance', 'Completed', '2026-04-27 01:31:30.872318', '2026-04-27 01:31:30.872318', NULL, 20, 'Articulated Truck 897', 'North Quarry', 'Cat 745', 5912) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.1ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Oil leak detected - Cat 336', 'fluid visible near lower engine compartment', 'In Progress', '2026-04-27 01:31:30.874635', '2026-04-27 01:31:30.874635', NULL, 0, 'Excavator 205', 'Highway Expansion Zone', 'Cat 336', 9976) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.1ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Oil leak detected - Cat 966M', 'fluid visible near lower engine compartment', 'Completed', '2026-04-27 01:31:30.877011', '2026-04-27 01:31:30.877011', NULL, 0, 'Wheel Loader 919', 'Site A', 'Cat 966M', 3350) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.0ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Brake system warning - Cat 980', 'urgent brake warning reported during operation', 'Open', '2026-04-27 01:31:30.879951', '2026-04-27 01:31:30.879951', NULL, 30, 'Wheel Loader 341', 'Highway Expansion Zone', 'Cat 980', 6502) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (11.5ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Bucket control delay - Cat 349', 'operator reported delayed hydraulic response at bucket controls', 'Completed', '2026-04-27 01:31:30.882644', '2026-04-27 01:31:30.882644', NULL, 20, 'Excavator 349', 'West Pit', 'Cat 349', 4536) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.2ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Oil leak detected - Cat 745', 'fluid visible near lower engine compartment', 'Completed', '2026-04-27 01:31:30.896119', '2026-04-27 01:31:30.896119', NULL, 0, 'Articulated Truck 876', 'West Pit', 'Cat 745', 6373) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.7ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Low fuel pressure - Cat 966M', 'fuel delivery irregularity detected under load', 'Open', '2026-04-27 01:31:30.899635', '2026-04-27 01:31:30.899635', NULL, 0, 'Wheel Loader 195', 'Aggregate Yard', 'Cat 966M', 1030) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.7ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Brake system warning - Cat 140', 'urgent brake warning reported during operation', 'Completed', '2026-04-27 01:31:30.903349', '2026-04-27 01:31:30.903349', NULL, 30, 'Motor Grader 294', 'Site A', 'Cat 140', 4589) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.7ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Track tension issue - Cat D6', 'track tension outside service range, inspect undercarriage', 'In Progress', '2026-04-27 01:31:30.906312', '2026-04-27 01:31:30.906312', NULL, 20, 'Dozer 206', 'North Quarry', 'Cat D6', 6245) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.6ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Hydraulic pressure warning - Cat 745', 'urgent inspection required, hydraulic pressure dropped below expected range', 'Completed', '2026-04-27 01:31:30.908198', '2026-04-27 01:31:30.908198', NULL, 50, 'Articulated Truck 968', 'West Pit', 'Cat 745', 7875) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.7ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Oil leak detected - Cat 745', 'fluid visible near lower engine compartment', 'Completed', '2026-04-27 01:31:30.910754', '2026-04-27 01:31:30.910754', NULL, 0, 'Articulated Truck 911', 'Site A', 'Cat 745', 1787) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.8ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Brake system warning - Cat D8', 'urgent brake warning reported during operation', 'In Progress', '2026-04-27 01:31:30.912700', '2026-04-27 01:31:30.912700', NULL, 30, 'Dozer 722', 'Highway Expansion Zone', 'Cat D8', 12137) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.8ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Brake system warning - Cat 745', 'urgent brake warning reported during operation', 'Completed', '2026-04-27 01:31:30.915608', '2026-04-27 01:31:30.915608', NULL, 30, 'Articulated Truck 829', 'Depot Bay 3', 'Cat 745', 5232) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.1ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Bucket control delay - Cat D6', 'operator reported delayed hydraulic response at bucket controls', 'Completed', '2026-04-27 01:31:30.917983', '2026-04-27 01:31:30.917983', NULL, 20, 'Dozer 785', 'Highway Expansion Zone', 'Cat D6', 6708) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.7ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Engine temperature high - Cat D8', 'urgent fault detected, engine temperature exceeded normal operating band', 'Completed', '2026-04-27 01:31:30.920535', '2026-04-27 01:31:30.920535', NULL, 50, 'Dozer 249', 'North Quarry', 'Cat D8', 271) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.8ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Bucket control delay - Cat 140', 'operator reported delayed hydraulic response at bucket controls', 'In Progress', '2026-04-27 01:31:30.923149', '2026-04-27 01:31:30.923149', NULL, 20, 'Motor Grader 563', 'West Pit', 'Cat 140', 5518) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.8ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Low fuel pressure - Cat 340', 'fuel delivery irregularity detected under load', 'In Progress', '2026-04-27 01:31:30.925284', '2026-04-27 01:31:30.925284', NULL, 0, 'Excavator 776', 'Downtown Excavation', 'Cat 340', 862) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.7ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Low fuel pressure - Cat 140', 'fuel delivery irregularity detected under load', 'Completed', '2026-04-27 01:31:30.927818', '2026-04-27 01:31:30.927818', NULL, 0, 'Motor Grader 803', 'Highway Expansion Zone', 'Cat 140', 8692) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.9ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Scheduled service due - Cat 336', 'operating hours threshold reached for planned maintenance', 'Completed', '2026-04-27 01:31:30.930029', '2026-04-27 01:31:30.930029', NULL, 20, 'Excavator 265', 'North Quarry', 'Cat 336', 3066) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.7ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Oil leak detected - Cat 745', 'fluid visible near lower engine compartment', 'Open', '2026-04-27 01:31:30.932886', '2026-04-27 01:31:30.932886', NULL, 0, 'Articulated Truck 556', 'Site A', 'Cat 745', 3254) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.6ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Transmission fault code - Cat 320', 'powertrain fault code logged during shift', 'Completed', '2026-04-27 01:31:30.934932', '2026-04-27 01:31:30.934932', NULL, 0, 'Excavator 611', 'West Pit', 'Cat 320', 1453) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.6ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Brake system warning - Cat D8', 'urgent brake warning reported during operation', 'In Progress', '2026-04-27 01:31:30.937081', '2026-04-27 01:31:30.937081', NULL, 30, 'Dozer 547', 'Downtown Excavation', 'Cat D8', 10528) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.6ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Oil leak detected - Cat 320', 'fluid visible near lower engine compartment', 'Completed', '2026-04-27 01:31:30.939010', '2026-04-27 01:31:30.939010', NULL, 0, 'Excavator 717', 'North Quarry', 'Cat 320', 9330) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.6ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Hydraulic pressure warning - Cat 349', 'urgent inspection required, hydraulic pressure dropped below expected range', 'Completed', '2026-04-27 01:31:30.941035', '2026-04-27 01:31:30.941035', NULL, 50, 'Excavator 491', 'Site A', 'Cat 349', 10524) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.6ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Transmission fault code - Cat 980', 'powertrain fault code logged during shift', 'Open', '2026-04-27 01:31:30.943015', '2026-04-27 01:31:30.943015', NULL, 0, 'Wheel Loader 551', 'North Quarry', 'Cat 980', 6279) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.6ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Track tension issue - Cat 966M', 'track tension outside service range, inspect undercarriage', 'Open', '2026-04-27 01:31:30.945083', '2026-04-27 01:31:30.945083', NULL, 20, 'Wheel Loader 589', 'North Quarry', 'Cat 966M', 2482) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.2ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Bucket control delay - Cat 349', 'operator reported delayed hydraulic response at bucket controls', 'In Progress', '2026-04-27 01:31:30.946970', '2026-04-27 01:31:30.946970', NULL, 20, 'Excavator 151', 'Depot Bay 3', 'Cat 349', 10824) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (1.1ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Transmission fault code - Cat 980', 'powertrain fault code logged during shift', 'Open', '2026-04-27 01:31:30.950220', '2026-04-27 01:31:30.950220', NULL, 0, 'Wheel Loader 166', 'North Quarry', 'Cat 980', 11124) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.6ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Sensor communication loss - Cat 336', 'machine telemetry reported intermittent sensor dropout', 'Completed', '2026-04-27 01:31:30.953130', '2026-04-27 01:31:30.953130', NULL, 20, 'Excavator 253', 'Site A', 'Cat 336', 9356) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.9ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Track tension issue - Cat 745', 'track tension outside service range, inspect undercarriage', 'Open', '2026-04-27 01:31:30.955545', '2026-04-27 01:31:30.955545', NULL, 20, 'Articulated Truck 837', 'Site A', 'Cat 745', 3000) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.6ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Low fuel pressure - Cat 980', 'fuel delivery irregularity detected under load', 'Open', '2026-04-27 01:31:30.957674', '2026-04-27 01:31:30.957674', NULL, 0, 'Wheel Loader 136', 'Highway Expansion Zone', 'Cat 980', 2939) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mNote Create (0.6ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "status", "created_at", "updated_at", "user_id", "score", "machine_name", "machine_location", "machine_model", "operating_hours") VALUES ('Scheduled service due - Cat 340', 'operating hours threshold reached for planned maintenance', 'In Progress', '2026-04-27 01:31:30.959498', '2026-04-27 01:31:30.959498', NULL, 20, 'Excavator 731', 'Depot Bay 3', 'Cat 340', 10083) RETURNING "id" /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsSystemsLab'*/[0m
+  ↳ lib/tasks/fleet_sim.rake:48:in `block (3 levels) in <main>'
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:32:38 -0400
+Started GET "/api/notes" for 127.0.0.1 at 2026-04-26 21:32:38 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsSystemsLab'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/notes"):
+  
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (1.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."note_id" IN (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59) /*action='index',application='RailsSystemsLab',controller='notes'*/[0m
+  ↳ app/controllers/api/notes_controller.rb:6:in `map'
+Completed 200 OK in 78ms (Views: 0.4ms | ActiveRecord: 3.5ms (2 queries, 0 cached) | GC: 4.5ms)
+
+
